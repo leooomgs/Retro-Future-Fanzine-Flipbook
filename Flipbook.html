@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook mit Audio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .flipbook-container {
+            width: 800px;
+            height: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .flipbook {
+            width: 100%;
+            height: 100%;
+        }
+        .flipbook .page {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flipbook-container">
+    <div class="flipbook">
+        <div 
+   class="page"><img src="https://drive.google.com/uc?export=view&id=1sqmdJi1DwGrVP3gg8cvq5Dwxs9sLcMXZ" alt="Seite 1"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1OEE8P_p3Ho_8YLe8bmLjgRQtisMh6jIo" alt="Seite 2"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1vyBc5w2zvuZtto2AfOS7ejvWCcdCVPHz" alt="Seite 3"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1NMOgA2Zfc4TRtZ35VIhVU9bBW7KLdewJ" alt="Seite 4"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=16q8lOgJfac3fciPKGIZgVs-YPVOlJGZT" alt="Seite 5"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=13Kcs0R3LfI8LOyHHaMh_AbA2_WQgB2vZ" alt="Seite 6"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1DwTeIdEVA6-U0O3kz4EhiK0cbG-N3DpL" alt="Seite 7"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1l4OHq1RfJXQOpx9K2rwT4czM0WXKaye9" alt="Seite 8"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1K_raqwwaekyvbXNJkfwOczp6LsiNgvmX" alt="Seite 9"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1xOOz-7W-mE1F7RqIZy2PFrX_EEkHGz6N" alt="Seite 10"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=112XgOElYN0O8j_zwnYissHy_6YS2HC03" alt="Seite 11"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=185EsUdRuTdeeAKaTk6aeBqMwt5N6aTsV" alt="Seite 12"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1kYHiHPEne8eNefHmF73jrmFwPFt8Ub_K" alt="Seite 13"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1V3uid1Diw8Rp67UR4WyuMGGMQd8wp-ha" alt="Seite 14"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1t_zkHtYWFrfvqYyEVe34PXl31Hqdojdl" alt="Seite 15"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1bOTZNzhUk3ZFEF7YOFM3MXqfqw2GOd6D" alt="Seite 16"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1edaWtsLu-m8YZETb0tAGYE-pRAtqqqAU" alt="Seite 17"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1dtKLhN7L1GH4KSof_R_7lAFT8M7TET2_" alt="Seite 18"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1eCbmmA0g0rGm08mLwoKfy1kFjLUosp14" alt="Seite 19"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1cYXFWfth6Y9zPutYloJDxaDDbhWPvVip" alt="Seite 20"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1aAhQvSbAxfTCsOyHmGhH1u2yov3fBG6-" alt="Seite 21"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1lUhB8jYPb8E2rS69o8JTPBE2LG7Kzu8A" alt="Seite 22"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1C-_4DZHd-VvnXTrPVtcM1kBBSzCj5Bh_" alt="Seite 23"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1KuAGaUVxlk5dPUhK8bKi9326HRxAFZXc" alt="Seite 24"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1Gb6DBLpd815VVIKb_udapCwo6zE4g2az" alt="Seite 25"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1RcP0_byDGOrooALVh3PLeSRT3HF7A8-X" alt="Seite 26"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=14fISDda048SHqj_Fxcf7UeeOwzNtivoJ" alt="Seite 27"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1YlV1x3XJifCw7KnsydmK-Lx4OurlGnCQ" alt="Seite 28"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1pDYRiIUnLe689jgPJhbqyjUkJb0hmOpe" alt="Seite 29"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1SeF-6USvUkGS-kkYBfvfFVYDuk8GQeY9" alt="Seite 30"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1NOO6jD02mSORR6De4_jfxv99Z6LFvhqF" alt="Seite 31"></div>
+        <div 
+src="https://drive.google.com/uc?export=view&id=1iLiRHD4HM1G2-elg7hTf8rTjbU45jgan" alt="Seite 32"></div>
+           <div class="page"><img src="https://drive.google.com/uc?export=view&id=1JwskpH5xBy8LB-GOdeSsy_4scaCUN-Aj" alt="Seite 33"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1xc2Gf5JzuQngyTG9V0a40lrXEP8QRSKv" alt="Seite 34"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1wD_kiuJG9mEEHHufaRSFT3JHWOx9UyZe" alt="Seite 35"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1NfbPahe0jAoro3ysf1ChdWk9X2d8llJy" alt="Seite 36"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1fCDU8xjXhK034rQFmSa6BEVUFRojh1kV" alt="Seite 37"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1RSmxBH0Bv2jClLEzc_OBuPcxxyM0hteZ" alt="Seite 38"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=17JyVCQ48kLBV0y7lBZ_6NlCiP90SWmXT" alt="Seite 39"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1Iq9Qggxc2kTw1V1ISiVJ9qIif49bkilg" alt="Seite 40"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=18E36LbibMbRDY6ntWMQShgTYXvlUdBsa" alt="Seite 41"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1YfLaneDEkxAEOiGJ6anS2dxWFq33YHqC" alt="Seite 42"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1xzgmSbFtiPthKqeGgSUau4R9PISF6ovq" alt="Seite 43"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=14s4vDVcaKPlwwhISYAdV-uYn_BlzoFEg" alt="Seite 44"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1cM9qRkt_pvt9L09JtrMJDEVrt6amgyAJ" alt="Seite 45"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1JqmKOvpNjSpJ_uT_pfwbmTs5-ieiMBn9" alt="Seite 46"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=15wRnBGXnMQCg8fbk7GpNRhL3q632Wcpw" alt="Seite 47"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1aeCb5byNfVm5g1hECGyorOLLoc63Vg4r" alt="Seite 48"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1juMOmiabgnNTzHuWM7W7Ttt5YUiTXaml" alt="Seite 49"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1F9kRlVwobmBDB47ejorvkUwdwFk28WPI" alt="Seite 50"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1cOzWGs0f7Ssonip5ZyU8lY55igfBYFCR" alt="Seite 51"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1tsPeoTfN2Ige-LEhbtMT_3E6mlFpiK7g" alt="Seite 52"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1RUUWpgZmyR2W5QakEsQzHxuMWXXhP_7B" alt="Seite 53"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1vnp3BHrSw9DQ9bT24VSUCjJdtDnRdDzm" alt="Seite 54"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1U3Ro6uePYiYbPHM2UMN1quAUEifIVgII" alt="Seite 55"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1zvZR-nhXGtXWRbxy-Z-yWOJ0Rc-gWwrW" alt="Seite 56"></div>
+        <div class="page"><img src="https://drive.google.com/uc?export=view&id=1_Zl5bxSZPGMeKyKD7smWh8xS0ljZHs4W" alt="Seite 57"></div>
+    </div>
+</div>
+
+<audio id="page-audio" src="https://drive.google.com/uc?export=download&id=1mYaEukdYdKygvpD1Wq6evwEuQnMQuGO4"></audio>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+<script>
+    $(document).ready(function() {
+        const audio = document.getElementById('page-audio');
+        $('.flipbook').turn({
+            width: 800,
+            height: 600,
+            autoCenter: true
+        });
+
+        // Event-Listener für Seitenwechsel im Flipbook
+        $('.flipbook').bind('turning', function(event, page, view) {
+            if (page === 38) {
+                audio.play();
+            } else if (page > 39 || page < 38) {
+                audio.pause();
+                audio.currentTime = 0; // Audio zurücksetzen
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
